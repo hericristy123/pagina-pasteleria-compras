@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reservas</title>
+	<style>
+		body {
+			background-color: #9442d8; /* Fondo de color gris claro */
+			font-family: Arial, sans-serif;
+			font-size: 14px;
+			line-height: 1.5;
+			padding: 20px;
+		}
+		label {
+			display: block;
+			margin-bottom: 5px;
+		}
+		input[type=text], select {
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+			width: 100%;
+			margin-bottom: 20px;
+		}
+		input[type=submit] {
+			background-color: #4CAF50; /* Fondo de color verde */
+			color: white;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			width: 100%;
+		}
+		input[type=submit]:hover {
+			background-color: #45a049; /* Fondo de color verde oscuro */
+		}
+	</style>
+    <style>
+		body {
+			background-color: #87CEFA; /* Fondo de color azul celeste */
+		}
+		img {
+			width: 200px;
+			height: 200px;
+			margin: 20px;
+			border-radius: 50%;
+		}
+	</style>
+</head>
+<body>
+	<h1>Reservas</h1>
+	<form>
+		<label for="ubicacion">Ubicación:</label>
+		<select id="ubicacion" name="ubicacion">
+			<option value="Calle Jose Clemente Orozco Flores">Calle Jose Clemente Orozco Flores</option>
+			<option value="Calle Jose Clemente Orozco #39">Calle Jose Clemente Orozco #39</option>
+		</select>
+		
+		<h2><label for="fecha">Fecha:</label></h2>
+		<input type="date" id="fecha" name="fecha" required>
+		
+		<h2><label for="horario">Horario:</label></h2>
+		<select id="horario" name="horario">
+			<option value="10:00 AM">10:00 AM</option>
+			<option value="11:00 AM">11:00 AM</option>
+			<option value="12:00 PM">12:00 PM</option>
+			<option value="1:00 PM">1:00 PM</option>
+			<option value="2:00 PM">2:00 PM</option>
+		</select>
+		
+		<h2><label for="grupo">Tamaño del grupo:</label></h2>
+		<input type="number" id="grupo" name="grupo" min="1" max="15" required>
+		
+		<input type="submit" value="Reservar ahora">
+	</form>
+    <center><div>
+		<img src="C:\trabajos de clase\pasteleria\760b60e88b6a42799b6739df50d3e5ef.jpg" alt="Pastel 1">
+		<img src="C:\trabajos de clase\pasteleria\31be2a63b92b988d0b02958874451f78--meringue-cake-meringue-desserts.jpg" alt="Pastel 2">
+		<img src="C:\trabajos de clase\pasteleria\3e7ec3db76c547e5395945275ed82b7e.jpg" alt="Pastel 3">
+		<img src="C:\trabajos de clase\pasteleria\4.jpg" alt="Pastel 4">
+	</div></center>
+	<button onclick="history.back()">Regresar</button>
+</body>
+</html>

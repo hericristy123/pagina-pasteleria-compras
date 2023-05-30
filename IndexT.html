@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Suma de productos</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body bgcolor="DarkSalmon">
+    <style>
+      body {
+        background-color: #7ee097; /* Fondo de color azul celeste */
+      }
+      img {
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+        border-radius: 50%;
+      }
+    </style>
+    <center><h1>Pagar</h1></center>
+    
+    <center><script>
+      
+        let total = 0;
+        function anadirProducto() {
+          let precio = document.getElementById("precio").value;
+          precio = parseFloat(precio);
+        
+          if (isNaN(precio)) {
+            alert("Introduce un precio válido.");
+            return;
+          }
+        
+          total += precio;
+        
+          document.getElementById("total").innerHTML = "Total: $" + total.toFixed(2);
+        }
+        
+        function borrar() {
+          total = 0;
+          document.getElementById("precio").value = "";
+          document.getElementById("total").innerHTML = "Total: $0";
+        }
+        
+	
+    </script>
+<div>Articulo 1</div>
+<Select name="" id="">
+  <option value="Mexico"> Rey de chocolate </option>
+  <option value="Colombia"> Zanahoria </option>
+  <option value="Colombia">Tiramizu</option>
+  <option value="Colombia"> Tres Chocolates </option>
+  <option value="Colombia"> Brazo Gitano de Chocolate </option>
+  <option value="Colombia"> Brazo Gitano de Vainilla </option>
+  <option value="Colombia"> Mixto </option>
+  <option value="Colombia"> Fresas con Almendra </option>
+  <option value="Colombia"> Chocolate con Zarzamora </option>
+  <option value="Colombia"> Capuchino </option>
+  <option value="Colombia"> Choco Ron  </option>
+  <option value="Colombia"> Moka </option>
+  <option value="Colombia"> Pay de Queso </option>
+  <option value="Colombia"> Choco Fresa *Sobre pedido </option>
+  <option value="Colombia"> Fresas con Chantilly *Sobre pedido </option>
+  <option value="Colombia"> Durazno con Chantilly *Sobre pedido </option>
+  <option value="Colombia"> Dos Leches *Sobre pedido</option>
+  <option value="Colombia"> Selva Negra *Sobre pedido </option>
+
+    <h1>Suma de productos</h1>
+    <p>Introduce el precio de cada producto y pulsa el botón "Añadir" para sumarlos:</p>
+    <input type="number" id="precio">
+    <button id="boton-anadir" onclick="anadirProducto()">Añadir</button>
+    <button id="boton-borrar" onclick="borrar()">Borrar</button>
+    <p id="total">Total: $0</p>
+
+<img src="C:\trabajos de clase\La casa de los postres\1.webp" alt="Rey de chocolate">
+
+<img src="C:\trabajos de clase\La casa de los postres\2.webp" alt="Rey de chocolate">
+
+<img src="C:\trabajos de clase\La casa de los postres\3.webp" alt="Rey de chocolate">
+
+<img src="C:\trabajos de clase\La casa de los postres\4.webp" alt="Rey de chocolate">
+
+<img src="C:\trabajos de clase\La casa de los postres\5.webp" alt="Rey de chocolate">
+
+<img src="C:\trabajos de clase\La casa de los postres\6.webp" alt="Rey de chocolate">
+
+<img src="C:\trabajos de clase\La casa de los postres\7.webp" alt="Rey de chocolate">
+
+<img src="C:\trabajos de clase\La casa de los postres\8.webp" alt="Rey de chocolate">
+
+<img src="C:\trabajos de clase\La casa de los postres\9.webp" alt="Rey de chocolate">
+
+<img src="C:\trabajos de clase\La casa de los postres\10.webp" alt="Rey de chocolate">
+</center>
+<button onclick="history.back()">Regresar</button>
+  </body>
+</html>
